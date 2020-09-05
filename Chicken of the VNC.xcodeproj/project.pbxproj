@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FDDB38325031E9000BDCAC2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDDB38225031E9000BDCAC2 /* Security.framework */; };
 		7F7A93E505E71B5C00E20416 /* ByteBlockReader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DC719B033DB4A801A8010C /* ByteBlockReader.h */; };
 		7F7A93E605E71B5C00E20416 /* ByteReader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DC719D033DB4A801A8010C /* ByteReader.h */; };
 		7F7A93E705E71B5C00E20416 /* CARD16Reader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DC719F033DB4A801A8010C /* CARD16Reader.h */; };
@@ -201,6 +202,8 @@
 		0FDDB37E2502DD8B00BDCAC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0FDDB37F2502DD8B00BDCAC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = Resources/en.lproj/KeyEquivalentScenarios.plist; sourceTree = "<group>"; };
 		0FDDB3802502DD8C00BDCAC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0FDDB38125031B3900BDCAC2 /* Chicken of the VNC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Chicken of the VNC.entitlements"; sourceTree = "<group>"; };
+		0FDDB38225031E9000BDCAC2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		7F088F2405E1D81100336456 /* ServerDataManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ServerDataManager.h; sourceTree = "<group>"; };
 		7F088F2505E1D81100336456 /* ServerDataManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ServerDataManager.m; sourceTree = "<group>"; };
@@ -366,6 +369,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FDDB38325031E9000BDCAC2 /* Security.framework in Frameworks */,
 				7F7A945905E71B5C00E20416 /* Cocoa.framework in Frameworks */,
 				7F7A945A05E71B5C00E20416 /* libz.dylib in Frameworks */,
 				7F7A945B05E71B5C00E20416 /* Carbon.framework in Frameworks */,
@@ -396,6 +400,7 @@
 		29B97314FDCFA39411CA2CEA /* Chicken of the VNC */ = {
 			isa = PBXGroup;
 			children = (
+				0FDDB38125031B3900BDCAC2 /* Chicken of the VNC.entitlements */,
 				F5DC718B033DB45F01A8010C /* Documentation */,
 				F5DC7198033DB4A801A8010C /* Source */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -433,6 +438,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0FDDB38225031E9000BDCAC2 /* Security.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 			);
 			name = Frameworks;
@@ -772,9 +778,11 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 1160;
 				TargetAttributes = {
 					7F7A93E305E71B5C00E20416 = {
-						DevelopmentTeam = J3VNR8UWPP;
+						DevelopmentTeam = VQYGYPHYGE;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1043,10 +1051,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				ZERO_LINK = NO;
 				_CHICKEN_VERSION_ = 2.0b4;
 			};
@@ -1056,8 +1065,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_ENTITLEMENTS = "Chicken of the VNC.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = J3VNR8UWPP;
+				DEVELOPMENT_TEAM = VQYGYPHYGE;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1072,6 +1084,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slashlos.cotvnc;
 				PRODUCT_NAME = "Chicken of the VNC";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SECTORDER_FLAGS = "";
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = x86_64;
@@ -1089,8 +1102,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_ENTITLEMENTS = "Chicken of the VNC.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = J3VNR8UWPP;
+				DEVELOPMENT_TEAM = VQYGYPHYGE;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1105,6 +1121,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slashlos.cotvnc;
 				PRODUCT_NAME = "Chicken of the VNC";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SECTORDER_FLAGS = "";
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = x86_64;
@@ -1122,10 +1139,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				ZERO_LINK = NO;
