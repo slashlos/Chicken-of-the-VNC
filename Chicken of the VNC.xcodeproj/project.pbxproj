@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0FDDB38325031E9000BDCAC2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDDB38225031E9000BDCAC2 /* Security.framework */; };
+		0FDDB39225042B6300BDCAC2 /* ConnectionDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FDDB38425042B6300BDCAC2 /* ConnectionDialog.xib */; };
+		0FDDB39325042B6300BDCAC2 /* ProfileManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FDDB38625042B6300BDCAC2 /* ProfileManager.xib */; };
+		0FDDB39425042B6300BDCAC2 /* RFBConnection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FDDB38825042B6300BDCAC2 /* RFBConnection.xib */; };
+		0FDDB39525042B6300BDCAC2 /* ListenDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FDDB38A25042B6300BDCAC2 /* ListenDialog.xib */; };
+		0FDDB39625042B6300BDCAC2 /* ServerDisplay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FDDB38C25042B6300BDCAC2 /* ServerDisplay.xib */; };
+		0FDDB39725042B6300BDCAC2 /* OSX_RFBViewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FDDB38E25042B6300BDCAC2 /* OSX_RFBViewer.xib */; };
+		0FDDB39825042B6300BDCAC2 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FDDB39025042B6300BDCAC2 /* Preferences.xib */; };
 		7F7A93E505E71B5C00E20416 /* ByteBlockReader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DC719B033DB4A801A8010C /* ByteBlockReader.h */; };
 		7F7A93E605E71B5C00E20416 /* ByteReader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DC719D033DB4A801A8010C /* ByteReader.h */; };
 		7F7A93E705E71B5C00E20416 /* CARD16Reader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DC719F033DB4A801A8010C /* CARD16Reader.h */; };
@@ -62,8 +69,6 @@
 		7F7A941C05E71B5C00E20416 /* rfbCursor3.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F5DC7178033DB40D01A8010C /* rfbCursor3.tiff */; };
 		7F7A941F05E71B5C00E20416 /* rfbCursor2.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F5DC717B033DB40D01A8010C /* rfbCursor2.tiff */; };
 		7F7A942005E71B5C00E20416 /* rfbCursor.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F5DC717C033DB40D01A8010C /* rfbCursor.tiff */; };
-		7F7A942105E71B5C00E20416 /* RFBConnection.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5DC7185033DB44301A8010C /* RFBConnection.nib */; };
-		7F7A942205E71B5C00E20416 /* OSX_RFBViewer.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5DC7187033DB44301A8010C /* OSX_RFBViewer.nib */; };
 		7F7A942705E71B5C00E20416 /* ByteBlockReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DC719C033DB4A801A8010C /* ByteBlockReader.m */; };
 		7F7A942805E71B5C00E20416 /* ByteReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DC719E033DB4A801A8010C /* ByteReader.m */; };
 		7F7A942905E71B5C00E20416 /* CARD16Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DC71A0033DB4A801A8010C /* CARD16Reader.m */; };
@@ -128,7 +133,6 @@
 		7FD35C1B06CC583A00648090 /* ProfileDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD35C1906CC583A00648090 /* ProfileDataManager.m */; };
 		7FFA8FEB062BA6330008D381 /* ServerBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFA8FE9062BA6330008D381 /* ServerBase.h */; };
 		7FFA8FEC062BA6330008D381 /* ServerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA8FEA062BA6330008D381 /* ServerBase.m */; };
-		7FFA903D062BA74F0008D381 /* ServerDisplay.nib in Resources */ = {isa = PBXBuildFile; fileRef = 7FFA903B062BA74F0008D381 /* ServerDisplay.nib */; };
 		E21FE263062B6D310059585C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E21FE261062B6D310059585C /* Localizable.strings */; };
 		E21FE449062B79AB0059585C /* KeyEquivalentScenario.m in Sources */ = {isa = PBXBuildFile; fileRef = E21FE43D062B79AB0059585C /* KeyEquivalentScenario.m */; };
 		E21FE44A062B79AB0059585C /* KeyEquivalentEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = E21FE43E062B79AB0059585C /* KeyEquivalentEntry.h */; };
@@ -154,17 +158,13 @@
 		E2B083E30763AA7D00CE24C1 /* ServerFromConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B083E10763AA7D00CE24C1 /* ServerFromConnection.h */; };
 		E2B083EF0763AA9A00CE24C1 /* ListenerController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B083ED0763AA9A00CE24C1 /* ListenerController.h */; };
 		E2B083F00763AA9A00CE24C1 /* ListenerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B083EE0763AA9A00CE24C1 /* ListenerController.m */; };
-		E2B083F90763AAC200CE24C1 /* ListenDialog.nib in Resources */ = {isa = PBXBuildFile; fileRef = E2B083F70763AAC200CE24C1 /* ListenDialog.nib */; };
 		E2CA651806DA451600B70BDF /* help in Resources */ = {isa = PBXBuildFile; fileRef = E2CA650906DA451500B70BDF /* help */; };
 		E2F3A2CB06D44755005EB917 /* PrefController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F3A2C906D44755005EB917 /* PrefController.h */; };
 		E2F3A2CC06D44755005EB917 /* PrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F3A2CA06D44755005EB917 /* PrefController.m */; };
 		E2F3A2E506D4483D005EB917 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F3A2E306D4483D005EB917 /* AppDelegate.h */; };
 		E2F3A2E606D4483D005EB917 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F3A2E406D4483D005EB917 /* AppDelegate.m */; };
-		E2F3A34006D44E0E005EB917 /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = E2F3A33E06D44E0E005EB917 /* Preferences.nib */; };
 		E2F3A3B406D45C7B005EB917 /* PrefController_private.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F3A3B206D45C7B005EB917 /* PrefController_private.h */; };
 		E2F3A3B506D45C7B005EB917 /* PrefController_private.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F3A3B306D45C7B005EB917 /* PrefController_private.m */; };
-		E2F3A7E806D4A687005EB917 /* ConnectionDialog.nib in Resources */ = {isa = PBXBuildFile; fileRef = E2F3A7E606D4A687005EB917 /* ConnectionDialog.nib */; };
-		E2F3A99E06D4BFD8005EB917 /* ProfileManager.nib in Resources */ = {isa = PBXBuildFile; fileRef = E2F3A99C06D4BFD8005EB917 /* ProfileManager.nib */; };
 		E2F3AB0406D5B86A005EB917 /* ProfileManager_private.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F3AB0206D5B86A005EB917 /* ProfileManager_private.h */; };
 		E2F3AB0506D5B86A005EB917 /* ProfileManager_private.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F3AB0306D5B86A005EB917 /* ProfileManager_private.m */; };
 		E2F3AD7106D5E11D005EB917 /* NSObject_Chicken.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F3AD6F06D5E11D005EB917 /* NSObject_Chicken.h */; };
@@ -204,6 +204,27 @@
 		0FDDB3802502DD8C00BDCAC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0FDDB38125031B3900BDCAC2 /* Chicken of the VNC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Chicken of the VNC.entitlements"; sourceTree = "<group>"; };
 		0FDDB38225031E9000BDCAC2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0FDDB38525042B6300BDCAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Resources/Base.lproj/ConnectionDialog.xib; sourceTree = "<group>"; };
+		0FDDB38725042B6300BDCAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Resources/Base.lproj/ProfileManager.xib; sourceTree = "<group>"; };
+		0FDDB38925042B6300BDCAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Resources/Base.lproj/RFBConnection.xib; sourceTree = "<group>"; };
+		0FDDB38B25042B6300BDCAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Resources/Base.lproj/ListenDialog.xib; sourceTree = "<group>"; };
+		0FDDB38D25042B6300BDCAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Resources/Base.lproj/ServerDisplay.xib; sourceTree = "<group>"; };
+		0FDDB38F25042B6300BDCAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Resources/Base.lproj/OSX_RFBViewer.xib; sourceTree = "<group>"; };
+		0FDDB39125042B6300BDCAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Resources/Base.lproj/Preferences.xib; sourceTree = "<group>"; };
+		0FDDB39A25042CD100BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Resources/it.lproj/ConnectionDialog.strings; sourceTree = "<group>"; };
+		0FDDB39C25042CDC00BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Resources/fr.lproj/ConnectionDialog.strings; sourceTree = "<group>"; };
+		0FDDB39E25042CE100BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Resources/fr.lproj/ListenDialog.strings; sourceTree = "<group>"; };
+		0FDDB3A025042CE200BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Resources/it.lproj/ListenDialog.strings; sourceTree = "<group>"; };
+		0FDDB3A225042CE600BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Resources/fr.lproj/OSX_RFBViewer.strings; sourceTree = "<group>"; };
+		0FDDB3A425042CE700BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Resources/it.lproj/OSX_RFBViewer.strings; sourceTree = "<group>"; };
+		0FDDB3A625042CEB00BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Resources/fr.lproj/Preferences.strings; sourceTree = "<group>"; };
+		0FDDB3A825042CEC00BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Resources/it.lproj/Preferences.strings; sourceTree = "<group>"; };
+		0FDDB3AA25042CF000BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Resources/fr.lproj/ProfileManager.strings; sourceTree = "<group>"; };
+		0FDDB3AC25042CF200BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Resources/it.lproj/ProfileManager.strings; sourceTree = "<group>"; };
+		0FDDB3AE25042CF600BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Resources/fr.lproj/RFBConnection.strings; sourceTree = "<group>"; };
+		0FDDB3B025042CF700BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Resources/it.lproj/RFBConnection.strings; sourceTree = "<group>"; };
+		0FDDB3B225042CFB00BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Resources/fr.lproj/ServerDisplay.strings; sourceTree = "<group>"; };
+		0FDDB3B425042CFC00BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Resources/it.lproj/ServerDisplay.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		7F088F2405E1D81100336456 /* ServerDataManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ServerDataManager.h; sourceTree = "<group>"; };
 		7F088F2505E1D81100336456 /* ServerDataManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ServerDataManager.m; sourceTree = "<group>"; };
@@ -379,6 +400,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FDDB3B525042D2A00BDCAC2 /* Deprecated nibs */ = {
+			isa = PBXGroup;
+			children = (
+				E2F3A7E606D4A687005EB917 /* ConnectionDialog.nib */,
+				E2B083F70763AAC200CE24C1 /* ListenDialog.nib */,
+				E2F3A33E06D44E0E005EB917 /* Preferences.nib */,
+				E2F3A99C06D4BFD8005EB917 /* ProfileManager.nib */,
+				F5DC7187033DB44301A8010C /* OSX_RFBViewer.nib */,
+				F5DC7185033DB44301A8010C /* RFBConnection.nib */,
+				7FFA903B062BA74F0008D381 /* ServerDisplay.nib */,
+			);
+			name = "Deprecated nibs";
+			sourceTree = "<group>";
+		};
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,13 +459,14 @@
 				F5DC717C033DB40D01A8010C /* rfbCursor.tiff */,
 				F5DC717B033DB40D01A8010C /* rfbCursor2.tiff */,
 				F5DC7178033DB40D01A8010C /* rfbCursor3.tiff */,
-				E2F3A7E606D4A687005EB917 /* ConnectionDialog.nib */,
-				E2B083F70763AAC200CE24C1 /* ListenDialog.nib */,
-				E2F3A33E06D44E0E005EB917 /* Preferences.nib */,
-				E2F3A99C06D4BFD8005EB917 /* ProfileManager.nib */,
-				F5DC7187033DB44301A8010C /* OSX_RFBViewer.nib */,
-				F5DC7185033DB44301A8010C /* RFBConnection.nib */,
-				7FFA903B062BA74F0008D381 /* ServerDisplay.nib */,
+				0FDDB38425042B6300BDCAC2 /* ConnectionDialog.xib */,
+				0FDDB38A25042B6300BDCAC2 /* ListenDialog.xib */,
+				0FDDB38E25042B6300BDCAC2 /* OSX_RFBViewer.xib */,
+				0FDDB39025042B6300BDCAC2 /* Preferences.xib */,
+				0FDDB38625042B6300BDCAC2 /* ProfileManager.xib */,
+				0FDDB38825042B6300BDCAC2 /* RFBConnection.xib */,
+				0FDDB38C25042B6300BDCAC2 /* ServerDisplay.xib */,
+				0FDDB3B525042D2A00BDCAC2 /* Deprecated nibs */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -817,19 +853,19 @@
 				7F7A941C05E71B5C00E20416 /* rfbCursor3.tiff in Resources */,
 				7F7A941F05E71B5C00E20416 /* rfbCursor2.tiff in Resources */,
 				7F7A942005E71B5C00E20416 /* rfbCursor.tiff in Resources */,
-				7F7A942105E71B5C00E20416 /* RFBConnection.nib in Resources */,
-				7F7A942205E71B5C00E20416 /* OSX_RFBViewer.nib in Resources */,
 				E21FE263062B6D310059585C /* Localizable.strings in Resources */,
-				7FFA903D062BA74F0008D381 /* ServerDisplay.nib in Resources */,
-				E2F3A34006D44E0E005EB917 /* Preferences.nib in Resources */,
-				E2F3A7E806D4A687005EB917 /* ConnectionDialog.nib in Resources */,
-				E2F3A99E06D4BFD8005EB917 /* ProfileManager.nib in Resources */,
+				0FDDB39625042B6300BDCAC2 /* ServerDisplay.xib in Resources */,
+				0FDDB39525042B6300BDCAC2 /* ListenDialog.xib in Resources */,
+				0FDDB39225042B6300BDCAC2 /* ConnectionDialog.xib in Resources */,
+				0FDDB39725042B6300BDCAC2 /* OSX_RFBViewer.xib in Resources */,
 				E2CA651806DA451600B70BDF /* help in Resources */,
 				E2B0839D0763A51700CE24C1 /* KeyEquivalentScenarios.plist in Resources */,
-				E2B083F90763AAC200CE24C1 /* ListenDialog.nib in Resources */,
+				0FDDB39825042B6300BDCAC2 /* Preferences.xib in Resources */,
 				7FB3EA8D0804ECDB003757C9 /* CotVNC.scriptTerminology in Resources */,
+				0FDDB39425042B6300BDCAC2 /* RFBConnection.xib in Resources */,
 				7FB3EA8E0804ECE0003757C9 /* CotVNC.scriptSuite in Resources */,
 				E291FAD5088161DA0061216E /* cursors.plist in Resources */,
+				0FDDB39325042B6300BDCAC2 /* ProfileManager.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -847,7 +883,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"$TARGET_BUILD_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION/Contents\"\n\ncat ./Info.plist \\\n| sed s/__VERSION__/$_CHICKEN_VERSION_/ \\\n> ./Info.plist.tmp \\\n&& mv -f ./Info.plist.tmp ./Info.plist\n\nTESTPATH=./Resources/*.lproj/InfoPlist.strings\nfor path in $TESTPATH ; do\n\tif [ $path != \"$TESTPATH\" ]; then\n\t\tcat \"$path\" \\\n\t\t| sed s/__VERSION__/$_CHICKEN_VERSION_/ \\\n\t\t> \"$path.tmp\" \\\n\t\t&& mv -f \"$path.tmp\" \"$path\"\n\tfi\ndone";
+			shellScript = "cd \"$TARGET_BUILD_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION/Contents\"\n\ncat ./Info.plist \\\n| sed s/__VERSION__/$_CHICKEN_VERSION_/ \\\n> ./Info.plist.tmp \\\n&& mv -f ./Info.plist.tmp ./Info.plist\n\nTESTPATH=./Resources/*.lproj/InfoPlist.strings\nfor path in $TESTPATH ; do\n\tif [ $path != \"$TESTPATH\" ]; then\n\t\tcat \"$path\" \\\n\t\t| sed s/__VERSION__/$_CHICKEN_VERSION_/ \\\n\t\t> \"$path.tmp\" \\\n\t\t&& mv -f \"$path.tmp\" \"$path\"\n\tfi\ndone\n";
 		};
 		E23631DC0646E907000D00B6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -860,7 +896,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "strip -urx \"$TARGET_BUILD_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION/Contents/MacOS/$PRODUCT_NAME\"";
+			shellScript = "strip -urx \"$TARGET_BUILD_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION/Contents/MacOS/$PRODUCT_NAME\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -944,6 +980,76 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0FDDB38425042B6300BDCAC2 /* ConnectionDialog.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FDDB38525042B6300BDCAC2 /* Base */,
+				0FDDB39A25042CD100BDCAC2 /* it */,
+				0FDDB39C25042CDC00BDCAC2 /* fr */,
+			);
+			name = ConnectionDialog.xib;
+			sourceTree = "<group>";
+		};
+		0FDDB38625042B6300BDCAC2 /* ProfileManager.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FDDB38725042B6300BDCAC2 /* Base */,
+				0FDDB3AA25042CF000BDCAC2 /* fr */,
+				0FDDB3AC25042CF200BDCAC2 /* it */,
+			);
+			name = ProfileManager.xib;
+			sourceTree = "<group>";
+		};
+		0FDDB38825042B6300BDCAC2 /* RFBConnection.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FDDB38925042B6300BDCAC2 /* Base */,
+				0FDDB3AE25042CF600BDCAC2 /* fr */,
+				0FDDB3B025042CF700BDCAC2 /* it */,
+			);
+			name = RFBConnection.xib;
+			sourceTree = "<group>";
+		};
+		0FDDB38A25042B6300BDCAC2 /* ListenDialog.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FDDB38B25042B6300BDCAC2 /* Base */,
+				0FDDB39E25042CE100BDCAC2 /* fr */,
+				0FDDB3A025042CE200BDCAC2 /* it */,
+			);
+			name = ListenDialog.xib;
+			sourceTree = "<group>";
+		};
+		0FDDB38C25042B6300BDCAC2 /* ServerDisplay.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FDDB38D25042B6300BDCAC2 /* Base */,
+				0FDDB3B225042CFB00BDCAC2 /* fr */,
+				0FDDB3B425042CFC00BDCAC2 /* it */,
+			);
+			name = ServerDisplay.xib;
+			sourceTree = "<group>";
+		};
+		0FDDB38E25042B6300BDCAC2 /* OSX_RFBViewer.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FDDB38F25042B6300BDCAC2 /* Base */,
+				0FDDB3A225042CE600BDCAC2 /* fr */,
+				0FDDB3A425042CE700BDCAC2 /* it */,
+			);
+			name = OSX_RFBViewer.xib;
+			sourceTree = "<group>";
+		};
+		0FDDB39025042B6300BDCAC2 /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FDDB39125042B6300BDCAC2 /* Base */,
+				0FDDB3A625042CEB00BDCAC2 /* fr */,
+				0FDDB3A825042CEC00BDCAC2 /* it */,
+			);
+			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
 		7FFA903B062BA74F0008D381 /* ServerDisplay.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1050,14 +1156,16 @@
 		4A0431CF1234A2F900270DDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 				ZERO_LINK = NO;
-				_CHICKEN_VERSION_ = 2.0b4;
+				_CHICKEN_VERSION_ = 2.0b5;
 			};
 			name = Release;
 		};
@@ -1138,16 +1246,18 @@
 		E20426EB087531990026AA26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
+				VALID_ARCHS = x86_64;
 				ZERO_LINK = NO;
-				_CHICKEN_VERSION_ = 2.0b4;
+				_CHICKEN_VERSION_ = 2.0b5;
 			};
 			name = Debug;
 		};

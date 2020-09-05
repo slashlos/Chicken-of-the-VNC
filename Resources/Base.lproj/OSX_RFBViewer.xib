@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment version="101500" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
@@ -12,7 +12,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <menu title="OSX_RFBViewer" systemMenu="main" id="29" userLabel="MainMenu">
             <items>
                 <menuItem title="Chicken of the VNC" id="612">
@@ -281,17 +281,18 @@
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="135" y="154"/>
         </menu>
         <window title="About Chicken of the VNC" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="about" animationBehavior="default" id="232" userLabel="Info" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="358" y="593" width="565" height="196"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="832"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <view key="contentView" autoresizesSubviews="NO" id="231">
-                <rect key="frame" x="1" y="1" width="565" height="196"/>
+                <rect key="frame" x="0.0" y="0.0" width="565" height="196"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" id="225">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="225">
                         <rect key="frame" x="124" y="137" width="265" height="39"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" alignment="left" title="Chicken of the VNC" id="1481">
@@ -300,47 +301,47 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="228">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="228">
                         <rect key="frame" x="59" y="20" width="154" height="10"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <textFieldCell key="cell" alignment="left" title="2.0" id="1483">
+                        <textFieldCell key="cell" alignment="left" title="__VERSION__" placeholderString="2.0b5" id="1483">
                             <font key="font" size="10" name="Helvetica"/>
                             <color key="textColor" white="0.33333299" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="229">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="229">
                         <rect key="frame" x="126" y="99" width="242" height="30"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" selectable="YES" alignment="left" id="1484">
-                            <font key="font" size="12" name="Helvetica"/>
-                            <string key="title">Administered by Jason Harris
+                            <font key="font" metaFont="user"/>
+                            <string key="title">Modernized by CD M Santiago
 based on VNCViewer by Helmut Maierhofer</string>
                             <color key="textColor" red="0.117647" green="0.19215699999999999" blue="0.45882401" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="230">
-                        <rect key="frame" x="342" y="20" width="203" height="26"/>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="230">
+                        <rect key="frame" x="342" y="7" width="203" height="39"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" selectable="YES" alignment="right" id="1485">
                             <font key="font" size="10" name="Helvetica"/>
                             <string key="title">Copyright 1998-2000 by Helmut Maierhofer
-Copyright 2002-2006 by Jason Harris</string>
+Copyright 2002-2006 by Jason Harris Copyright © 2020 CD M Santiago</string>
                             <color key="textColor" white="0.33333299" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <imageView id="227">
+                    <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="227">
                         <rect key="frame" x="20" y="80" width="96" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="1482"/>
                     </imageView>
-                    <box autoresizesSubviews="NO" verticalHuggingPriority="750" boxType="separator" id="909">
+                    <box autoresizesSubviews="NO" verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="909">
                         <rect key="frame" x="12" y="52" width="541" height="5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </box>
-                    <textField verticalHuggingPriority="750" id="911">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="911">
                         <rect key="frame" x="125" y="63" width="334" height="28"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" selectable="YES" alignment="left" id="1486">
@@ -351,7 +352,7 @@ source code and support available at http://cotvnc.sourceforge.net</string>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="1366">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1366">
                         <rect key="frame" x="20" y="20" width="39" height="10"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" alignment="left" title="Version" id="1487">
@@ -360,12 +361,12 @@ source code and support available at http://cotvnc.sourceforge.net</string>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="1479">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1479">
                         <rect key="frame" x="376" y="99" width="169" height="30"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" selectable="YES" alignment="right" id="1488">
-                            <font key="font" size="12" name="Helvetica"/>
-                            <string key="title">(support@geekspiff.com)
+                            <font key="font" metaFont="user"/>
+                            <string key="title">(slashlos@gmail.com)
 (helmut.maierhofer@chello.at)
 </string>
                             <color key="textColor" red="0.117647" green="0.19215699999999999" blue="0.45882401" alpha="1" colorSpace="calibratedRGB"/>
@@ -374,6 +375,7 @@ source code and support available at http://cotvnc.sourceforge.net</string>
                     </textField>
                 </subviews>
             </view>
+            <point key="canvasLocation" x="-435.5" y="329"/>
         </window>
         <customObject id="1367" userLabel="AppDelegate" customClass="AppDelegate">
             <connections>
@@ -384,6 +386,7 @@ source code and support available at http://cotvnc.sourceforge.net</string>
         <view autoresizesSubviews="NO" id="910">
             <rect key="frame" x="0.0" y="0.0" width="435" height="1"/>
             <autoresizingMask key="autoresizingMask"/>
+            <point key="canvasLocation" x="140" y="336"/>
         </view>
     </objects>
     <resources>

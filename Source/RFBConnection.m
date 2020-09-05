@@ -147,7 +147,7 @@ static void socket_address(struct sockaddr_in *addr, NSString* host, int port)
 
 - (void)_finishInitWithFileHandle:(NSFileHandle*)file server:(id<IServerData>)server
 {
-    [NSBundle loadNibNamed:@"RFBConnection.nib" owner:self];
+    [NSBundle loadNibNamed:@"RFBConnection" owner:self];
     server_ = [(id)server retain];
 	
 	_eventFilter = [[EventFilter alloc] init];

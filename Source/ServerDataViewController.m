@@ -32,7 +32,7 @@
 {
 	if (self = [super init])
 	{
-		[NSBundle loadNibNamed:@"ServerDisplay.nib" owner:self];
+		[NSBundle loadNibNamed:@"ServerDisplay" owner:self];
 		
 		selfTerminate = NO;
 		removedSaveCheckbox = NO;
