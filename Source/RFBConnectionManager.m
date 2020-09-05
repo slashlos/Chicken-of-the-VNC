@@ -75,6 +75,7 @@
 	
 	mDisplayGroups = NO;
 	mLaunchedByURL = NO;
+	mDebugMode = NO;
 	
 	mOrderedServerNames = [[NSMutableArray alloc] init];
 	[self reloadServerArray];
@@ -154,7 +155,7 @@
 		{
 			if (i + 1 >= argCount) [self cmdlineUsage];
 			NSString *passwordFile = [args objectAtIndex:++i];
-			char *decrypted_password = vncDecryptPasswdFromFile((char*)[passwordFile cString]);
+			char *decrypted_password = vncDecryptPasswdFromFile((char*)[passwordFile cStringUsingEncoding:NSUTF8StringEncoding]);
 			if (decrypted_password == NULL)
 			{
 				NSLog(@"Cannot read password from file.");
@@ -162,7 +163,7 @@
 			} 
 			else
 			{
-				[cmdlineServer setPassword: [NSString stringWithCString:decrypted_password]];
+				[cmdlineServer setPassword: [NSString stringWithCString:decrypted_password encoding:NSUTF8StringEncoding]];
 				free(decrypted_password);
 			}
 		}
@@ -186,6 +187,12 @@
 				exit(1);
 			}
 			profile = [profileManager profileNamed: profileName];
+		}
+		else if ([arg hasPrefix:@"-NSDocumentRevisionsDebugMode"])
+		{
+			//	Next arg *has* to be "YES" or "NO"
+			NSInteger debugChoice = [@[@"NO",@"YES"] indexOfObject:args[++i]];
+			mDebugMode = (debugChoice);
 		}
 		else if ([arg hasPrefix:@"-"])
 			[self cmdlineUsage];
@@ -410,7 +417,7 @@
 	{
 		if ( name && [name isEqualToString: newName] )
 		{
-			[serverList selectRow: index byExtendingSelection: NO];
+			[serverList selectRowIndexes:[NSIndexSet indexSetWithIndex:index] byExtendingSelection:NO];
 			[serverList editColumn: 0 row: index withEvent: nil select: YES];
 			break;
 		}
@@ -528,7 +535,7 @@
 	{
 		if ( name && [name isEqualToString: [server name]] )
 		{
-			[serverList selectRow: index byExtendingSelection: NO];
+			[serverList selectRowIndexes:[NSIndexSet indexSetWithIndex:index] byExtendingSelection:NO];
 			break;
 		}
 		index++;

@@ -166,8 +166,10 @@ ButtonNumberToRFBButtomMask( unsigned int buttonNumber )
 
 	[self sendAllPendingQueueEntriesNow];
 	int addMask;
-    NSPoint	p = [_view convertPoint: [[_view window] convertScreenToBase: [NSEvent mouseLocation]] 
-						  fromView: nil];
+	NSPoint location = [_view.window mouseLocationOutsideOfEventStream];
+	NSRect rect = NSMakeRect(location.x, location.y, 0, 0);
+	NSPoint p = [_view convertPoint: [_view.window convertRectFromScreen: rect].origin fromView:nil];
+	
     if ( [theEvent deltaY] > 0.0 )
 		addMask = rfbButton4Mask;
 	else
@@ -849,8 +851,10 @@ ButtonNumberToRFBButtomMask( unsigned int buttonNumber )
 			if ( validEvents / 2 == _multipTapCount[buttonIndex] )
 			{
 				[self discardAllPendingQueueEntries];
-				NSPoint	p = [_view convertPoint: [[_view window] convertScreenToBase: [NSEvent mouseLocation]] 
-									  fromView: nil];
+				NSPoint location = [_view.window mouseLocationOutsideOfEventStream];
+				NSRect rect = NSMakeRect(location.x, location.y, 0, 0);
+				NSPoint p = [_view convertPoint: [_view.window convertRectFromScreen: rect].origin fromView:nil];
+				
 				unsigned int rfbButton = ButtonNumberToRFBButtomMask( button );
 				[_connection mouseAt: p buttons: _pressedButtons | rfbButton];	// 'Mouse button down'
 				[_connection mouseAt: p buttons: _pressedButtons];				// 'Mouse button up'

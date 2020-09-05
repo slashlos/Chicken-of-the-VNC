@@ -38,6 +38,7 @@
 	BOOL mDisplayGroups;
 	BOOL mRunningFromCommandLine;
 	BOOL mLaunchedByURL;
+	BOOL mDebugMode;
 	NSMutableArray* mOrderedServerNames;
 }
 

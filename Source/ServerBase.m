@@ -32,10 +32,10 @@
 	{
 		// The order of remember password setting and password is critical, or we risk loosing
 		// saved passwords.
-		[self setName:            [NSString stringWithString:@"new server"]];
-		[self setHostAndPort:     [NSString stringWithString:@"localhost"]];
+		[self setName:            @"new server"];
+		[self setHostAndPort:     @"localhost"];
 		[self setRememberPassword:NO];
-		[self setPassword:        [NSString stringWithString:@""]];
+		[self setPassword:        @""];
 		[self setDisplay:         0];
 		[self setPort:            5900];
 		[self setLastProfile:     [NSString stringWithString:[[ProfileDataManager sharedInstance] defaultProfileName]]];
@@ -143,7 +143,7 @@
 	}
 	else
 	{
-		_name = [[NSString stringWithString:@"localhost"] retain];
+		_name = [@"localhost" retain];
 	}
 	
 	[[NSNotificationCenter defaultCenter] postNotificationName:ServerChangeMsg
@@ -159,7 +159,7 @@
 	}
 	else
 	{
-		_host = [[NSString stringWithString:@"new server"] retain];
+		_host = [@"new server" retain];
 	}
 	
 	[[NSNotificationCenter defaultCenter] postNotificationName:ServerChangeMsg
@@ -201,7 +201,7 @@
 	}
 	else
 	{
-		_password = [[NSString stringWithString:@""] retain];
+		_password = [@"" retain];
 	}
 	
 	[[NSNotificationCenter defaultCenter] postNotificationName:ServerChangeMsg

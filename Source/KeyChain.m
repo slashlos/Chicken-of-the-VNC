@@ -43,12 +43,15 @@ static KeyChain* defaultKeyChain = nil;
     if (!password || [password length] == 0) {
         [self removeGenericPasswordForService:service account:account];
     } else {
-        strcpy(p,[password cString]);
-    
-        if (itemref = [self _genericPasswordReferenceForService:service account:account])
+        strcpy(p,[password cStringUsingEncoding:NSUTF8StringEncoding]);
+
+        if ((itemref = [self _genericPasswordReferenceForService:service account:account]))
         KCDeleteItem(itemref);
-        ret = kcaddgenericpassword([service cString], [account cString], [password cStringLength], 
-        p, NULL);
+        ret = kcaddgenericpassword([service cStringUsingEncoding:NSUTF8StringEncoding],
+								   [account cStringUsingEncoding:NSUTF8StringEncoding],
+								   [password cStringUsingEncoding:NSUTF8StringEncoding],
+								   p,
+								   NULL);
         free(p); 
     }
 }
@@ -65,10 +68,12 @@ static KeyChain* defaultKeyChain = nil;
         return @"";
     }
     
-    ret = kcfindgenericpassword([service cString], [account cString], maxPasswordLength-1, p, &length, nil);
+    ret = kcfindgenericpassword([service cStringUsingEncoding:NSUTF8StringEncoding],
+								[account cStringUsingEncoding:NSUTF8StringEncoding],
+								maxPasswordLength-1, p, &length, nil);
 
     if (!ret)
-        string = [NSString stringWithCString:(const char*)p length:length];
+        string = [NSString stringWithCString:(const char*)p encoding:NSUTF8StringEncoding];
     free(p); 
     return string;
 }
@@ -76,7 +81,7 @@ static KeyChain* defaultKeyChain = nil;
 - (void)removeGenericPasswordForService:(NSString *)service account:(NSString*)account
 {
     KCItemRef itemref = nil ;
-    if (itemref = [self _genericPasswordReferenceForService:service account:account])
+    if ((itemref = [self _genericPasswordReferenceForService:service account:account]) != nil)
         KCDeleteItem(itemref);
 }
 
@@ -100,7 +105,12 @@ static KeyChain* defaultKeyChain = nil;
 - (KCItemRef)_genericPasswordReferenceForService:(NSString *)service account:(NSString*)account
 {
     KCItemRef itemref = nil;
-    kcfindgenericpassword([service cString],[account cString],nil,nil,nil,&itemref);
+    kcfindgenericpassword([service cStringUsingEncoding:NSUTF8StringEncoding],
+						  [account cStringUsingEncoding:NSUTF8StringEncoding],
+						  nil,
+						  nil,
+						  nil,
+						  &itemref);
     return itemref;
 }
 

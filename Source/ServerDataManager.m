@@ -442,13 +442,13 @@ static ServerDataManager* gInstance = nil;
 			NSParameterAssert( nil == mServiceBrowser_VNC );
 			
 			mServiceBrowser_VNC = [[NSNetServiceBrowser alloc] init];
-			[mServiceBrowser_VNC setDelegate:self];
+			[mServiceBrowser_VNC setDelegate: (id)self];
 			[mServiceBrowser_VNC searchForServicesOfType:@"_vnc._tcp" inDomain:@""];
 			
 			NSParameterAssert( nil == mServiceBrowser_RFB );
 			
 			mServiceBrowser_RFB = [[NSNetServiceBrowser alloc] init];
-			[mServiceBrowser_RFB setDelegate:self];
+			[mServiceBrowser_RFB setDelegate: (id)self];
 			[mServiceBrowser_RFB searchForServicesOfType:@"_rfb._tcp" inDomain:@""];
 		}
 		else

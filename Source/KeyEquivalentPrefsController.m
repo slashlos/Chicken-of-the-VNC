@@ -233,7 +233,7 @@
 		{
 			NSWindow *window = [mOutlineView window];
 			mOriginalDelegate = [window delegate];
-			[window setDelegate: self];
+			[window setDelegate: (id)self];
 			return YES;
 		}
 	}

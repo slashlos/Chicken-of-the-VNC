@@ -119,14 +119,14 @@
 				else
 					errorStr = [errorStr stringByAppendingFormat:@",%@", [NSNumber numberWithChar:availableAuthType]];
 				if (availableAuthType == 30)
-					errorStr = [NSLocalizedString( @"ARDAuthWarning", nil ) stringByAppendingFormat:errorStr];
+					errorStr = [NSLocalizedString( @"ARDAuthWarning", nil ) stringByAppendingFormat:@"%@", errorStr];
 			}
 		}
 	}
 
 
 	// No valid auth type found
-	NSLog(errorStr);
+	NSLog(@"%@", errorStr);
 	availableAuthType= 0;
 	[target writeBytes:&availableAuthType length:1];
 	[target terminateConnection:errorStr];
@@ -159,7 +159,7 @@
     unsigned char bytes[CHALLENGESIZE];
 
     [theChallenge getBytes:bytes length:CHALLENGESIZE];
-    vncEncryptBytes(bytes, (char*)[[target password] cString]);
+	vncEncryptBytes(bytes, (char*)[[target password] cStringUsingEncoding:NSUTF8StringEncoding]);
     [target writeBytes:bytes length:CHALLENGESIZE];
     [target setReader:authResultReader];
 }

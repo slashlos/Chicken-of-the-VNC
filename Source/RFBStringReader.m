@@ -51,7 +51,7 @@
 
     memcpy(buffer + bytesRead, theBytes, canConsume);
     if((bytesRead += canConsume) == length) {
-        [target performSelector:action withObject:[NSString stringWithCString:buffer length:length]];
+        [target performSelector:action withObject:[NSString stringWithCString:buffer encoding:NSUTF8StringEncoding]];
     }
     return canConsume;
 }

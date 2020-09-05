@@ -111,7 +111,7 @@ static void socket_address(struct sockaddr_in *addr, NSString* host, int port)
 {
     addr->sin_family = AF_INET;
     addr->sin_port = htons(port);
-    addr->sin_addr.s_addr = address_for_name((char*)[host cString]);
+	addr->sin_addr.s_addr = address_for_name((char*)[host cStringUsingEncoding:NSUTF8StringEncoding]);
 }
 
 - (void)perror:(NSString*)theAction call:(NSString*)theFunction
@@ -263,7 +263,7 @@ static void socket_address(struct sockaddr_in *addr, NSString* host, int port)
 {
 	[serverVersion autorelease];
     serverVersion = [aVersion retain];
-	sscanf([serverVersion cString], rfbProtocolVersionFormat, &serverMajorVersion, &serverMinorVersion);
+	sscanf([serverVersion cStringUsingEncoding:NSUTF8StringEncoding], rfbProtocolVersionFormat, &serverMajorVersion, &serverMinorVersion);
 	
     NSLog(@"Server reports Version %@\n", aVersion);
 	// ARD sends this bogus 889 version#, at least for ARD 2.2 they actually comply with version 003.007 so we'll force that
@@ -341,7 +341,7 @@ static void socket_address(struct sockaddr_in *addr, NSString* host, int port)
 				NSString *header = NSLocalizedString( @"ConnectionTerminated", nil );
 				NSString *okayButton = NSLocalizedString( @"Okay", nil );
 				NSString *reconnectButton =  NSLocalizedString( @"Reconnect", nil );
-				NSBeginAlertSheet(header, okayButton, [server_ doYouSupport:CONNECT] ? reconnectButton : nil, nil, window, self, @selector(connectionTerminatedSheetDidEnd:returnCode:contextInfo:), nil, nil, aReason);
+				NSBeginAlertSheet(header, okayButton, [server_ doYouSupport:CONNECT] ? reconnectButton : nil, nil, window, self, @selector(connectionTerminatedSheetDidEnd:returnCode:contextInfo:), nil, nil, @"%@", aReason);
 				return;
 			}
         }
@@ -369,9 +369,12 @@ static void socket_address(struct sockaddr_in *addr, NSString* host, int port)
 		horizontalScroll = verticalScroll = NO;
 	// end jason
 		maxviewsize = [NSScrollView frameSizeForContentSize:[rfbView frame].size
-                                  hasHorizontalScroller:horizontalScroll
-                                    hasVerticalScroller:verticalScroll
-                                             borderType:NSNoBorder];
+									horizontalScrollerClass:nil
+									  verticalScrollerClass:nil
+												 borderType:NSNoBorder
+												controlSize:NSControlSizeRegular
+											  scrollerStyle:NSScrollerStyleOverlay];
+	
     if(aSize.width < maxviewsize.width) {
         horizontalScroll = YES;
     }
@@ -382,10 +385,13 @@ static void socket_address(struct sockaddr_in *addr, NSString* host, int port)
 	if (_isFullscreen && !usesFullscreenScrollers)
 		horizontalScroll = verticalScroll = NO;
 	// end jason
-    aSize = [NSScrollView frameSizeForContentSize:[rfbView frame].size
-                            hasHorizontalScroller:horizontalScroll
-                              hasVerticalScroller:verticalScroll
-                                       borderType:NSNoBorder];
+	aSize = [NSScrollView frameSizeForContentSize:[rfbView frame].size
+								horizontalScrollerClass:nil
+								  verticalScrollerClass:nil
+											 borderType:NSNoBorder
+											controlSize:NSControlSizeRegular
+										  scrollerStyle:NSScrollerStyleOverlay];
+	
     winframe = [window frame];
     winframe.size = aSize;
     winframe = [NSWindow frameRectForContentRect:winframe styleMask:[window styleMask]];
@@ -406,12 +412,18 @@ static void socket_address(struct sockaddr_in *addr, NSString* host, int port)
 	[frameBuffer setServerMajorVersion: serverMajorVersion minorVersion: serverMinorVersion];
 	
     [rfbView setFrameBuffer:frameBuffer];
-    [rfbView setDelegate:self];
+    [rfbView setDelegate: (id)self];
 	[_eventFilter setView: rfbView];
 
 	screenRect = [[NSScreen mainScreen] visibleFrame];
     wf.origin.x = wf.origin.y = 0;
-    wf.size = [NSScrollView frameSizeForContentSize:[rfbView frame].size hasHorizontalScroller:NO hasVerticalScroller:NO borderType:NSNoBorder];
+	wf.size = [NSScrollView frameSizeForContentSize:[rfbView frame].size
+								horizontalScrollerClass:nil
+								  verticalScrollerClass:nil
+											 borderType:NSNoBorder
+											controlSize:NSControlSizeRegular
+										  scrollerStyle:NSScrollerStyleOverlay];
+	
     wf = [NSWindow frameRectForContentRect:wf styleMask:[window styleMask]];
 	if (NSWidth(wf) > NSWidth(screenRect)) {
 		horizontalScroll = YES;
@@ -943,9 +955,9 @@ static void socket_address(struct sockaddr_in *addr, NSString* host, int port)
 }
 
 - (void)writeRFBString:(NSString *)aString {
-	unsigned int stringLength=htonl([aString cStringLength]);
+	unsigned int stringLength=htonl([aString lengthOfBytesUsingEncoding:NSUTF8StringEncoding]);
 	[self writeBytes:(unsigned char *)&stringLength length:4];
-	[self writeBytes:(unsigned char *)[aString cString] length:[aString cStringLength]];
+	[self writeBytes:(unsigned char *)[aString cStringUsingEncoding:NSUTF8StringEncoding] length:[aString lengthOfBytesUsingEncoding:NSUTF8StringEncoding]];
 }
 
 - (void)windowDidDeminiaturize:(NSNotification *)aNotification
@@ -1075,7 +1087,7 @@ static NSString* byteString(double d)
 										backing:NSBackingStoreBuffered
 										defer:NO
 										screen:[NSScreen mainScreen]];
-	[window setDelegate: self];
+	[window setDelegate: (id)self];
 	[(NSWindow *)window setContentView: scrollView];
 	[scrollView release];
 	_isFullscreen = NO;
@@ -1110,7 +1122,7 @@ static NSString* byteString(double d)
 											backing:NSBackingStoreBuffered
 											defer:NO
 											screen:[NSScreen mainScreen]];
-		[window setDelegate: self];
+		[window setDelegate: (id)self];
 		[(NSWindow *)window setContentView: scrollView];
 		[scrollView release];
 		[window setLevel:windowLevel];
@@ -1133,7 +1145,7 @@ static NSString* byteString(double d)
 		NSString *fullscreenButton = NSLocalizedString( @"Fullscreen", nil );
 		NSString *cancelButton = NSLocalizedString( @"Cancel", nil );
 		NSString *reason = NSLocalizedString( @"FullscreenReason", nil );
-		NSBeginAlertSheet(header, fullscreenButton, cancelButton, nil, window, self, nil, @selector(connectionWillGoFullscreen: returnCode: contextInfo: ), nil, reason);
+		NSBeginAlertSheet(header, fullscreenButton, cancelButton, nil, window, self, nil, @selector(connectionWillGoFullscreen: returnCode: contextInfo: ), nil, @"%@", reason);
 	} else {
 		[self connectionWillGoFullscreen:nil returnCode:NSAlertDefaultReturn contextInfo:nil]; 
 	}
@@ -1141,7 +1153,10 @@ static NSString* byteString(double d)
 
 - (void)installMouseMovedTrackingRect
 {
-	NSPoint mousePoint = [rfbView convertPoint: [window convertScreenToBase: [NSEvent mouseLocation]] fromView: nil];
+	NSPoint location = [window mouseLocationOutsideOfEventStream];
+	NSRect rect = NSMakeRect(location.x, location.y, 0, 0);
+	NSPoint mousePoint = [rfbView convertPoint: [window convertRectFromScreen: rect].origin fromView:nil];
+	
 	BOOL mouseInVisibleRect = [rfbView mouse: mousePoint inRect: [rfbView visibleRect]];
 	_mouseMovedTrackingTag = [rfbView addTrackingRect: [rfbView visibleRect] owner: self userData: nil assumeInside: mouseInVisibleRect];
 	if (mouseInVisibleRect)
@@ -1156,7 +1171,7 @@ static NSString* byteString(double d)
 	const float maxY = NSMaxY(scrollRect);
 	const float width = NSWidth(scrollRect);
 	const float height = NSHeight(scrollRect);
-	float scrollWidth = [NSScroller scrollerWidth];
+	float scrollWidth = [NSScroller scrollerWidthForControlSize:NSControlSizeRegular scrollerStyle:NSScrollerStyleOverlay];
 	NSRect aRect;
 
 	if ( ! [[PrefController sharedController] fullscreenHasScrollbars] )
@@ -1236,7 +1251,7 @@ static NSString* byteString(double d)
 		[contentView scrollToPoint: [contentView constrainScrollPoint: NSMakePoint(origin.x, origin.y - autoscrollIncrement)]];
 	else
         {
-		NSLog(@"Illegal tracking rectangle of %d", _currentTrackingTag);
+			NSLog(@"Illegal tracking rectangle of %ld", (long)_currentTrackingTag);
             return;
         }
     [scrollView reflectScrolledClipView: contentView];

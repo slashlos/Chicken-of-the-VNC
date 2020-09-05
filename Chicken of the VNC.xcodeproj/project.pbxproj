@@ -171,6 +171,36 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FDDB3632502DD7200BDCAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Resources/Base.lproj/ConnectionDialog.nib; sourceTree = "<group>"; };
+		0FDDB3642502DD7200BDCAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Resources/Base.lproj/ListenDialog.nib; sourceTree = "<group>"; };
+		0FDDB3652502DD7200BDCAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Resources/Base.lproj/Preferences.nib; sourceTree = "<group>"; };
+		0FDDB3662502DD7200BDCAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Resources/Base.lproj/ProfileManager.nib; sourceTree = "<group>"; };
+		0FDDB3672502DD7200BDCAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Resources/Base.lproj/OSX_RFBViewer.nib; sourceTree = "<group>"; };
+		0FDDB3682502DD7200BDCAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Resources/Base.lproj/RFBConnection.nib; sourceTree = "<group>"; };
+		0FDDB3692502DD7200BDCAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Resources/Base.lproj/ServerDisplay.nib; sourceTree = "<group>"; };
+		0FDDB36A2502DD7F00BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = fr; path = Resources/fr.lproj/ConnectionDialog.nib; sourceTree = "<group>"; };
+		0FDDB36B2502DD7F00BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Resources/fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0FDDB36C2502DD7F00BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = fr; path = Resources/fr.lproj/KeyEquivalentScenarios.plist; sourceTree = "<group>"; };
+		0FDDB36D2502DD8000BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = fr; path = Resources/fr.lproj/ListenDialog.nib; sourceTree = "<group>"; };
+		0FDDB36E2502DD8000BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Resources/fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0FDDB36F2502DD8000BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = fr; path = Resources/fr.lproj/OSX_RFBViewer.nib; sourceTree = "<group>"; };
+		0FDDB3702502DD8000BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = fr; path = Resources/fr.lproj/Preferences.nib; sourceTree = "<group>"; };
+		0FDDB3712502DD8000BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = fr; path = Resources/fr.lproj/ProfileManager.nib; sourceTree = "<group>"; };
+		0FDDB3722502DD8000BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = fr; path = Resources/fr.lproj/RFBConnection.nib; sourceTree = "<group>"; };
+		0FDDB3732502DD8000BDCAC2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = fr; path = Resources/fr.lproj/ServerDisplay.nib; sourceTree = "<group>"; };
+		0FDDB3742502DD8500BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = it; path = Resources/it.lproj/ConnectionDialog.nib; sourceTree = "<group>"; };
+		0FDDB3752502DD8500BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Resources/it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0FDDB3762502DD8600BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = it; path = Resources/it.lproj/KeyEquivalentScenarios.plist; sourceTree = "<group>"; };
+		0FDDB3772502DD8600BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = it; path = Resources/it.lproj/ListenDialog.nib; sourceTree = "<group>"; };
+		0FDDB3782502DD8600BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Resources/it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0FDDB3792502DD8600BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = it; path = Resources/it.lproj/OSX_RFBViewer.nib; sourceTree = "<group>"; };
+		0FDDB37A2502DD8600BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = it; path = Resources/it.lproj/Preferences.nib; sourceTree = "<group>"; };
+		0FDDB37B2502DD8600BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = it; path = Resources/it.lproj/ProfileManager.nib; sourceTree = "<group>"; };
+		0FDDB37C2502DD8600BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = it; path = Resources/it.lproj/RFBConnection.nib; sourceTree = "<group>"; };
+		0FDDB37D2502DD8600BDCAC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = it; path = Resources/it.lproj/ServerDisplay.nib; sourceTree = "<group>"; };
+		0FDDB37E2502DD8B00BDCAC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0FDDB37F2502DD8B00BDCAC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = Resources/en.lproj/KeyEquivalentScenarios.plist; sourceTree = "<group>"; };
+		0FDDB3802502DD8C00BDCAC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		7F088F2405E1D81100336456 /* ServerDataManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ServerDataManager.h; sourceTree = "<group>"; };
 		7F088F2505E1D81100336456 /* ServerDataManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ServerDataManager.m; sourceTree = "<group>"; };
@@ -192,9 +222,7 @@
 		7FF0C9A705CDC9A0008E39DD /* CotVNC.scriptTerminology */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.scriptTerminology; name = CotVNC.scriptTerminology; path = Resources/CotVNC.scriptTerminology; sourceTree = SOURCE_ROOT; };
 		7FFA8FE9062BA6330008D381 /* ServerBase.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ServerBase.h; sourceTree = "<group>"; };
 		7FFA8FEA062BA6330008D381 /* ServerBase.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ServerBase.m; sourceTree = "<group>"; };
-		7FFA903C062BA74F0008D381 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = Resources/English.lproj/ServerDisplay.nib; sourceTree = "<group>"; };
 		E21FE256062B6C8D0059585C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
-		E21FE262062B6D310059585C /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = Resources/English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E21FE43D062B79AB0059585C /* KeyEquivalentScenario.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = KeyEquivalentScenario.m; sourceTree = "<group>"; };
 		E21FE43E062B79AB0059585C /* KeyEquivalentEntry.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KeyEquivalentEntry.h; sourceTree = "<group>"; };
 		E21FE43F062B79AB0059585C /* KeyEquivalent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyEquivalent.m; sourceTree = "<group>"; };
@@ -216,32 +244,17 @@
 		E291FB22088168E20061216E /* QueuedEvent.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = QueuedEvent.m; sourceTree = "<group>"; };
 		E2929DD307675DE800190669 /* MyApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApp.h; sourceTree = "<group>"; };
 		E2929DD407675DE800190669 /* MyApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyApp.m; sourceTree = "<group>"; };
-		E2B0839C0763A51700CE24C1 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = English; path = Resources/English.lproj/KeyEquivalentScenarios.plist; sourceTree = "<group>"; };
-		E2B083A30763A79F00CE24C1 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = Resources/French.lproj/ServerDisplay.nib; sourceTree = "<group>"; };
-		E2B083A40763A79F00CE24C1 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = Resources/French.lproj/ConnectionDialog.nib; sourceTree = "<group>"; };
-		E2B083A50763A79F00CE24C1 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = Resources/French.lproj/RFBConnection.nib; sourceTree = "<group>"; };
-		E2B083A60763A79F00CE24C1 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = French; path = Resources/French.lproj/KeyEquivalentScenarios.plist; sourceTree = "<group>"; };
-		E2B083A70763A79F00CE24C1 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = Resources/French.lproj/Localizable.strings; sourceTree = "<group>"; };
-		E2B083A80763A79F00CE24C1 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = Resources/French.lproj/Preferences.nib; sourceTree = "<group>"; };
-		E2B083A90763A79F00CE24C1 /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = Resources/French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E2B083AA0763A79F00CE24C1 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = Resources/French.lproj/OSX_RFBViewer.nib; sourceTree = "<group>"; };
-		E2B083AB0763A79F00CE24C1 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = Resources/French.lproj/ProfileManager.nib; sourceTree = "<group>"; };
 		E2B083E00763AA7D00CE24C1 /* ServerFromConnection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ServerFromConnection.m; sourceTree = "<group>"; };
 		E2B083E10763AA7D00CE24C1 /* ServerFromConnection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ServerFromConnection.h; sourceTree = "<group>"; };
 		E2B083ED0763AA9A00CE24C1 /* ListenerController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ListenerController.h; sourceTree = "<group>"; };
 		E2B083EE0763AA9A00CE24C1 /* ListenerController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ListenerController.m; sourceTree = "<group>"; };
-		E2B083F80763AAC200CE24C1 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = Resources/English.lproj/ListenDialog.nib; sourceTree = "<group>"; };
-		E2B084000763ABD300CE24C1 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = Resources/French.lproj/ListenDialog.nib; sourceTree = "<group>"; };
 		E2CA650906DA451500B70BDF /* help */ = {isa = PBXFileReference; lastKnownFileType = folder; name = help; path = Resources/help; sourceTree = "<group>"; };
 		E2F3A2C906D44755005EB917 /* PrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefController.h; sourceTree = "<group>"; };
 		E2F3A2CA06D44755005EB917 /* PrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefController.m; sourceTree = "<group>"; };
 		E2F3A2E306D4483D005EB917 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E2F3A2E406D4483D005EB917 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E2F3A33F06D44E0E005EB917 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = Resources/English.lproj/Preferences.nib; sourceTree = "<group>"; };
 		E2F3A3B206D45C7B005EB917 /* PrefController_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefController_private.h; sourceTree = "<group>"; };
 		E2F3A3B306D45C7B005EB917 /* PrefController_private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefController_private.m; sourceTree = "<group>"; };
-		E2F3A7E706D4A687005EB917 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = Resources/English.lproj/ConnectionDialog.nib; sourceTree = "<group>"; };
-		E2F3A99D06D4BFD8005EB917 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = Resources/English.lproj/ProfileManager.nib; sourceTree = "<group>"; };
 		E2F3AB0206D5B86A005EB917 /* ProfileManager_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileManager_private.h; sourceTree = "<group>"; };
 		E2F3AB0306D5B86A005EB917 /* ProfileManager_private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileManager_private.m; sourceTree = "<group>"; };
 		E2F3AD6F06D5E11D005EB917 /* NSObject_Chicken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObject_Chicken.h; sourceTree = "<group>"; };
@@ -249,16 +262,6 @@
 		E2F48D74040EDD2200BD55BA /* KeyChain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KeyChain.h; sourceTree = "<group>"; };
 		E2F48D75040EDD2200BD55BA /* KeyChain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = KeyChain.m; sourceTree = "<group>"; };
 		E2F48D78040EDD5100BD55BA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
-		E2F5464B0768C79D00AB2600 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Resources/Italian.lproj/Localizable.strings; sourceTree = "<group>"; };
-		E2F5464C0768C79D00AB2600 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Resources/Italian.lproj/RFBConnection.nib; sourceTree = "<group>"; };
-		E2F5464D0768C79D00AB2600 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Italian; path = Resources/Italian.lproj/KeyEquivalentScenarios.plist; sourceTree = "<group>"; };
-		E2F5464E0768C79D00AB2600 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Resources/Italian.lproj/ConnectionDialog.nib; sourceTree = "<group>"; };
-		E2F5464F0768C79D00AB2600 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Resources/Italian.lproj/Preferences.nib; sourceTree = "<group>"; };
-		E2F546500768C79D00AB2600 /* Italian */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Italian; path = Resources/Italian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E2F546510768C79D00AB2600 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Resources/Italian.lproj/ServerDisplay.nib; sourceTree = "<group>"; };
-		E2F546520768C79D00AB2600 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Resources/Italian.lproj/ProfileManager.nib; sourceTree = "<group>"; };
-		E2F546530768C79D00AB2600 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Resources/Italian.lproj/OSX_RFBViewer.nib; sourceTree = "<group>"; };
-		E2F546540768C79D00AB2600 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Resources/Italian.lproj/ListenDialog.nib; sourceTree = "<group>"; };
 		E2F546570768C7C500AB2600 /* Chicken of the VNC.nibTranslate */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = "Chicken of the VNC.nibTranslate"; path = "Resources/Chicken of the VNC.nibTranslate"; sourceTree = "<group>"; };
 		F52128E40368AF9F01F702E0 /* GNU Public License.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "GNU Public License.txt"; sourceTree = "<group>"; };
 		F536C26603937E5301178D82 /* ZlibHexEncodingReader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ZlibHexEncodingReader.h; sourceTree = "<group>"; };
@@ -268,13 +271,10 @@
 		F564F4B60392E07E01303550 /* ZlibEncodingReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ZlibEncodingReader.m; sourceTree = "<group>"; };
 		F564F4B70392E07E01303550 /* ZlibEncodingReader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ZlibEncodingReader.h; sourceTree = "<group>"; };
 		F5B8B7E9036275D101000105 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = /usr/lib/libz.dylib; sourceTree = "<absolute>"; };
-		F5DC7173033DB3DC01A8010C /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = Resources/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F5DC7177033DB40D01A8010C /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = Resources/icon.icns; sourceTree = "<group>"; };
 		F5DC7178033DB40D01A8010C /* rfbCursor3.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = rfbCursor3.tiff; path = Resources/rfbCursor3.tiff; sourceTree = "<group>"; };
 		F5DC717B033DB40D01A8010C /* rfbCursor2.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = rfbCursor2.tiff; path = Resources/rfbCursor2.tiff; sourceTree = "<group>"; };
 		F5DC717C033DB40D01A8010C /* rfbCursor.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = rfbCursor.tiff; path = Resources/rfbCursor.tiff; sourceTree = "<group>"; };
-		F5DC7186033DB44301A8010C /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = Resources/English.lproj/RFBConnection.nib; sourceTree = "<group>"; };
-		F5DC7188033DB44301A8010C /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = Resources/English.lproj/OSX_RFBViewer.nib; sourceTree = "<group>"; };
 		F5DC7191033DB45F01A8010C /* ReadMe (Keymappings).txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "ReadMe (Keymappings).txt"; sourceTree = "<group>"; };
 		F5DC719B033DB4A801A8010C /* ByteBlockReader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ByteBlockReader.h; sourceTree = "<group>"; };
 		F5DC719C033DB4A801A8010C /* ByteBlockReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ByteBlockReader.m; sourceTree = "<group>"; };
@@ -771,15 +771,24 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					7F7A93E305E71B5C00E20416 = {
+						DevelopmentTeam = J3VNR8UWPP;
+					};
+				};
+			};
 			buildConfigurationList = E20426EA087531990026AA26 /* Build configuration list for PBXProject "Chicken of the VNC" */;
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
-				Italian,
+				en,
+				Base,
+				fr,
+				it,
+				ja,
+				de,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Chicken of the VNC */;
 			projectDirPath = "";
@@ -930,9 +939,9 @@
 		7FFA903B062BA74F0008D381 /* ServerDisplay.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7FFA903C062BA74F0008D381 /* English */,
-				E2B083A30763A79F00CE24C1 /* French */,
-				E2F546510768C79D00AB2600 /* Italian */,
+				0FDDB3692502DD7200BDCAC2 /* Base */,
+				0FDDB3732502DD8000BDCAC2 /* fr */,
+				0FDDB37D2502DD8600BDCAC2 /* it */,
 			);
 			name = ServerDisplay.nib;
 			sourceTree = "<group>";
@@ -940,9 +949,9 @@
 		E21FE261062B6D310059585C /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E21FE262062B6D310059585C /* English */,
-				E2B083A70763A79F00CE24C1 /* French */,
-				E2F5464B0768C79D00AB2600 /* Italian */,
+				0FDDB36E2502DD8000BDCAC2 /* fr */,
+				0FDDB3782502DD8600BDCAC2 /* it */,
+				0FDDB3802502DD8C00BDCAC2 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -950,9 +959,9 @@
 		E2B0839B0763A51700CE24C1 /* KeyEquivalentScenarios.plist */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E2B0839C0763A51700CE24C1 /* English */,
-				E2B083A60763A79F00CE24C1 /* French */,
-				E2F5464D0768C79D00AB2600 /* Italian */,
+				0FDDB36C2502DD7F00BDCAC2 /* fr */,
+				0FDDB3762502DD8600BDCAC2 /* it */,
+				0FDDB37F2502DD8B00BDCAC2 /* en */,
 			);
 			name = KeyEquivalentScenarios.plist;
 			sourceTree = "<group>";
@@ -960,9 +969,9 @@
 		E2B083F70763AAC200CE24C1 /* ListenDialog.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E2B083F80763AAC200CE24C1 /* English */,
-				E2B084000763ABD300CE24C1 /* French */,
-				E2F546540768C79D00AB2600 /* Italian */,
+				0FDDB3642502DD7200BDCAC2 /* Base */,
+				0FDDB36D2502DD8000BDCAC2 /* fr */,
+				0FDDB3772502DD8600BDCAC2 /* it */,
 			);
 			name = ListenDialog.nib;
 			sourceTree = "<group>";
@@ -970,9 +979,9 @@
 		E2F3A33E06D44E0E005EB917 /* Preferences.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E2F3A33F06D44E0E005EB917 /* English */,
-				E2B083A80763A79F00CE24C1 /* French */,
-				E2F5464F0768C79D00AB2600 /* Italian */,
+				0FDDB3652502DD7200BDCAC2 /* Base */,
+				0FDDB3702502DD8000BDCAC2 /* fr */,
+				0FDDB37A2502DD8600BDCAC2 /* it */,
 			);
 			name = Preferences.nib;
 			sourceTree = "<group>";
@@ -980,9 +989,9 @@
 		E2F3A7E606D4A687005EB917 /* ConnectionDialog.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E2F3A7E706D4A687005EB917 /* English */,
-				E2B083A40763A79F00CE24C1 /* French */,
-				E2F5464E0768C79D00AB2600 /* Italian */,
+				0FDDB3632502DD7200BDCAC2 /* Base */,
+				0FDDB36A2502DD7F00BDCAC2 /* fr */,
+				0FDDB3742502DD8500BDCAC2 /* it */,
 			);
 			name = ConnectionDialog.nib;
 			sourceTree = "<group>";
@@ -990,9 +999,9 @@
 		E2F3A99C06D4BFD8005EB917 /* ProfileManager.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E2F3A99D06D4BFD8005EB917 /* English */,
-				E2B083AB0763A79F00CE24C1 /* French */,
-				E2F546520768C79D00AB2600 /* Italian */,
+				0FDDB3662502DD7200BDCAC2 /* Base */,
+				0FDDB3712502DD8000BDCAC2 /* fr */,
+				0FDDB37B2502DD8600BDCAC2 /* it */,
 			);
 			name = ProfileManager.nib;
 			sourceTree = "<group>";
@@ -1000,9 +1009,9 @@
 		F5DC7172033DB3DC01A8010C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F5DC7173033DB3DC01A8010C /* English */,
-				E2B083A90763A79F00CE24C1 /* French */,
-				E2F546500768C79D00AB2600 /* Italian */,
+				0FDDB36B2502DD7F00BDCAC2 /* fr */,
+				0FDDB3752502DD8500BDCAC2 /* it */,
+				0FDDB37E2502DD8B00BDCAC2 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1010,9 +1019,9 @@
 		F5DC7185033DB44301A8010C /* RFBConnection.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F5DC7186033DB44301A8010C /* English */,
-				E2B083A50763A79F00CE24C1 /* French */,
-				E2F5464C0768C79D00AB2600 /* Italian */,
+				0FDDB3682502DD7200BDCAC2 /* Base */,
+				0FDDB3722502DD8000BDCAC2 /* fr */,
+				0FDDB37C2502DD8600BDCAC2 /* it */,
 			);
 			name = RFBConnection.nib;
 			sourceTree = "<group>";
@@ -1020,9 +1029,9 @@
 		F5DC7187033DB44301A8010C /* OSX_RFBViewer.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F5DC7188033DB44301A8010C /* English */,
-				E2B083AA0763A79F00CE24C1 /* French */,
-				E2F546530768C79D00AB2600 /* Italian */,
+				0FDDB3672502DD7200BDCAC2 /* Base */,
+				0FDDB36F2502DD8000BDCAC2 /* fr */,
+				0FDDB3792502DD8600BDCAC2 /* it */,
 			);
 			name = OSX_RFBViewer.nib;
 			sourceTree = "<group>";
@@ -1037,6 +1046,7 @@
 				DEPLOYMENT_POSTPROCESSING = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ZERO_LINK = NO;
 				_CHICKEN_VERSION_ = 2.0b4;
 			};
@@ -1045,7 +1055,9 @@
 		4A0431D01234A2F900270DDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = J3VNR8UWPP;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1055,12 +1067,14 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slashlos.cotvnc;
 				PRODUCT_NAME = "Chicken of the VNC";
 				SECTORDER_FLAGS = "";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -1074,7 +1088,9 @@
 		E20426E7087531990026AA26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = J3VNR8UWPP;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1084,12 +1100,14 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slashlos.cotvnc;
 				PRODUCT_NAME = "Chicken of the VNC";
 				SECTORDER_FLAGS = "";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -1107,7 +1125,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				ZERO_LINK = NO;

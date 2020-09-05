@@ -45,11 +45,11 @@
 		
 		[service retain];
 		service_ = service;
-		[service_ setDelegate:self];
+		[service_ setDelegate: (id)self];
 		if ( [service respondsToSelector: @selector(resolveWithTimeout:)] )
 			[service_ resolveWithTimeout: 5.0]; // Tiger only API
 		else
-			[service_ resolve];
+			[service_ resolveWithTimeout:5.0];
 		
 		// Set the initial name. It will have to be validated with the
 		// delegate if one is set
@@ -84,12 +84,12 @@
 	// for each rendezvous server saved.
 	
 	NSMutableDictionary* propertyDict = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-		[NSNumber numberWithBool:_rememberPassword],	[NSString stringWithString:@"rememberPassword"],
-		[NSNumber numberWithInt:_display],				[NSString stringWithString:@"display"],
-		[NSNumber numberWithBool:_shared],				[NSString stringWithString:@"shared"],
-		[NSNumber numberWithBool:_fullscreen],			[NSString stringWithString:@"fullscreen"],
-		[NSNumber numberWithBool:_viewOnly],          [NSString stringWithString:@"viewOnly"], 
-		_lastProfile,									[NSString stringWithString:@"lastProfile"],
+										 [NSNumber numberWithBool:_rememberPassword],	@"rememberPassword",
+										 [NSNumber numberWithInt:_display],				@"display",
+										 [NSNumber numberWithBool:_shared],				@"shared",
+										 [NSNumber numberWithBool:_fullscreen],			@"fullscreen",
+										 [NSNumber numberWithBool:_viewOnly],           @"viewOnly", 
+										 _lastProfile,									@"lastProfile",
 		nil,											nil];
 
 	NSDictionary* defaultServerDict = [[NSUserDefaults standardUserDefaults] objectForKey:RFB_SAVED_RENDEZVOUS_SERVERS];
@@ -152,7 +152,7 @@
                     _display = _port - 5900;
                 else
                     _display = 0;
-				return [NSString stringWithCString:inet_ntoa(sinAddr)];
+				return [NSString stringWithCString:inet_ntoa(sinAddr) encoding:NSUTF8StringEncoding];
             }
 		}
 		return NSLocalizedString( @"AddressResolveFailed", nil );

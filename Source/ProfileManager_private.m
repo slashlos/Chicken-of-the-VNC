@@ -66,8 +66,8 @@
 
 - (void)_selectProfileAtIndex: (int)index
 {
-	[mProfileTable selectRow: index byExtendingSelection: NO];
-	
+	[mProfileTable selectRowIndexes:[NSIndexSet indexSetWithIndex:index] byExtendingSelection:NO];
+
 	NSArray *profileNames = [self _sortedProfileNames];
 	[mProfileNameField setStringValue: [profileNames objectAtIndex: index]];
 	
