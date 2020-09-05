@@ -170,8 +170,8 @@
 /* Class = "NSTextFieldCell"; title = "Administered by Jason Harris\nbased on VNCViewer by Helmut Maierhofer"; ObjectID = "1484"; */
 "1484.title" = "Administered by Jason Harris\nbased on VNCViewer by Helmut Maierhofer";
 
-/* Class = "NSTextFieldCell"; title = "Copyright 1998-2000 by Helmut Maierhofer\nCopyright 2002-2006 by Jason Harris"; ObjectID = "1485"; */
-"1485.title" = "Copyright 1998-2000 by Helmut Maierhofer\nCopyright 2002-2006 by Jason Harris";
+/* Class = "NSTextFieldCell"; title = "Copyright 2020 CD M Santiago\nCopyright 1998-2000 by Helmut Maierhofer\nCopyright 2002-2006 by Jason Harris"; ObjectID = "1485"; */
+"1485.title" = "Copyright 2020 CD M Santiago\nCopyright 1998-2000 by Helmut Maierhofer\nCopyright 2002-2006 by Jason Harris";
 
 /* Class = "NSTextFieldCell"; title = "released under the GNU Public License\nsource code and support available at http://cotvnc.sourceforge.net"; ObjectID = "1486"; */
 "1486.title" = "released under the GNU Public License\nsource code and support available at http://cotvnc.sourceforge.net";
