@@ -600,7 +600,7 @@ Per Mac OS X da Jason Harris   (support@geekspiff.com)</string>
 				<string>VNC Login</string>
 			</dict>
 			<key>path</key>
-			<string>/Users/smeger/Documents/src/cotvnc/Resources/English.lproj/ConnectionDialog.nib</string>
+			<string>/Users/smeger/Documents/src/cotvnc/Resources/English.lproj/ConnectionDialog</string>
 		</dict>
 		<dict>
 			<key>comments</key>
@@ -649,7 +649,7 @@ andd eating lunc</string>
 				<string>default</string>
 			</dict>
 			<key>path</key>
-			<string>/Users/smeger/Documents/src/cotvnc/Resources/English.lproj/ListenDialog.nib</string>
+			<string>/Users/smeger/Documents/src/cotvnc/Resources/English.lproj/ListenDialog</string>
 		</dict>
 		<dict>
 			<key>comments</key>
@@ -961,7 +961,7 @@ Mac OS X port by Jason Harris   (support@geekspiff.com)</key>
 Mac OS X port by Jason Harris   (support@geekspiff.com)</string>
 			</dict>
 			<key>path</key>
-			<string>/Users/smeger/Documents/src/cotvnc/Resources/English.lproj/OSX_RFBViewer.nib</string>
+			<string>/Users/smeger/Documents/src/cotvnc/Resources/English.lproj/OSX_RFBViewer</string>
 		</dict>
 		<dict>
 			<key>comments</key>
@@ -1072,7 +1072,7 @@ as possible</string>
 				<string>Windowed Connection</string>
 			</dict>
 			<key>path</key>
-			<string>/Users/smeger/Documents/src/cotvnc/Resources/English.lproj/Preferences.nib</string>
+			<string>/Users/smeger/Documents/src/cotvnc/Resources/English.lproj/Preferences</string>
 		</dict>
 		<dict>
 			<key>comments</key>
@@ -1201,7 +1201,7 @@ Use the checkbox to disable specific encodings.</string>
 				<string>s</string>
 			</dict>
 			<key>path</key>
-			<string>/Users/smeger/Documents/src/cotvnc/Resources/English.lproj/ProfileManager.nib</string>
+			<string>/Users/smeger/Documents/src/cotvnc/Resources/English.lproj/ProfileManager</string>
 		</dict>
 		<dict>
 			<key>comments</key>
@@ -1291,7 +1291,7 @@ Protocol Parameters
 </string>
 			</dict>
 			<key>path</key>
-			<string>/Users/smeger/Documents/src/cotvnc/Resources/English.lproj/RFBConnection.nib</string>
+			<string>/Users/smeger/Documents/src/cotvnc/Resources/English.lproj/RFBConnection</string>
 		</dict>
 		<dict>
 			<key>comments</key>
@@ -1349,7 +1349,7 @@ Protocol Parameters
 				<string>default</string>
 			</dict>
 			<key>path</key>
-			<string>/Users/smeger/Documents/src/cotvnc/Resources/English.lproj/ServerDisplay.nib</string>
+			<string>/Users/smeger/Documents/src/cotvnc/Resources/English.lproj/ServerDisplay</string>
 		</dict>
 	</array>
 </dict>
